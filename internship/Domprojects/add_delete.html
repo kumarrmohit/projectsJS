@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_delete</title>
+</head>
+<body>
+    <div id="maindiv">
+        <h1>This is first element</h1>
+        <h1 id="secondh1">This is second element</h1>
+    </div>
+</body>
+</html>
+
+<script>
+    // adding the value
+    var maindiv=document.getElementById('maindiv')
+    
+    var newh1=document.createElement('h1')
+
+    var newh1text=document.createTextNode("This is third element")
+
+    newh1.append(newh1text)
+    maindiv.append(newh1)
+    newh1.style.color='red'
+
+    //deletedata
+    var secondh1=document.getElementById('secondh1')
+
+    maindiv.removeChild(secondh1)
+      //after this you will not find h1 second tag
+</script>

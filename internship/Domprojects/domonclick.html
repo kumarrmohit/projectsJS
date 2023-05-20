@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom onclick</title>
+</head>
+<body>
+    <button onclick="btn()">Click me</button>
+    <h1 id="btn">____</h1>
+</body>
+</html>
+
+<script>
+    function btn(){
+       var x=document.getElementById('btn')
+       x.innerHTML="i am no more blank"
+       x.style.color='green'
+    }
+
+</script>
